@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Owner Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pet Owner Sign-Up Form</h1>
+    <form action="">
+        <label for="name">
+            Pet Owner's Name:
+            <input type="text" id="name">
+        </label>
+        <label for="email">
+            Email:
+            <input type="email" id="email">
+        </label>
+        <label for="phone">
+            Phone:
+            <input type="text" id="phone" pattern="[0-9]">
+        </label>
+        <label for="city">
+            City:
+            <input type="text" id="city">
+        </label>
+        <label for="zipCode">
+            Zip Code:
+            <input type="text" pattern="[0-9]" id="zipCode"><br>
+        </label>
+        <label for="petName">
+            Pet's Name:
+            <input type="text" id="petName">
+        </label>
+        
+        <!-- <fieldset id="petType">
+            <legend>Pet Type:</legend>
+            <div>
+                <input type="radio"id="dog" name="petType" value="dog">
+                <label for="dog" class="petType">Dog</label>
+                
+                
+                <input type="radio"id="cat" name="petType" value="cat">
+                <label for="cat" class="petType">Cat</label>
+                
+                
+                <input type="radio" id="fish" name="petType" value="fish">
+                <label for="fish" class="petType">Fish</label>
+            </div>
+        </fieldset> -->
+        <!-- Add a select element to the form for selecting the pet type (e.g., dog, cat, fish). -->
+        <label for="petType">Select Pet Type:</label>
+        <select id="petType" name="petType">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="fish">Fish</option>
+        </select>
+            
+        <button type="button" id="signUpBtn">Sign-Up</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
