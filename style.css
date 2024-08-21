@@ -1,22 +1,9 @@
-form {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
+/* form {
+    width: 560px;
     height: auto;
-    border: solid 3px navy;
     padding: 20px;
-}
-label {
-    margin-bottom: 14px;
-    font-size: 24px;
-}
-input {
-    float: right;
-    height: 24px;
-}
-h1 {
-    margin-left: 40px;
-}
+    margin: auto;
+} */
 /* fieldset {
     margin-bottom: 20px;
 }
@@ -26,7 +13,7 @@ fieldset input{
 .petType {
     font-size: 18px;
 } */
-select {
+/* select {
     margin-bottom: 20px;
     height: 28px;
-}
+} */
