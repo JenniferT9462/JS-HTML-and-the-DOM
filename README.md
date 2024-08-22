@@ -1,4 +1,6 @@
+# Pet Kennel App
 # JS HTML and the DOM
+
 
 ## Day 1
 ### Pet Owner Sign-Up Form
@@ -16,6 +18,9 @@
 
 ## Day 3
 
+ In this assignment, you’ll split your JavaScript code into multiple files and create a simple pet management system. You will create a createPet factory function in one file and use it in another to manage pets through a form in an HTML page.
+
 ## Day 4
 
-## Day 5
+ In this assignment, you'll extend your pet management system by creating a method that generates HTML for each pet and then rendering this HTML to the webpage. You'll also learn how to aggregate HTML from multiple objects into a single string and display it dynamically.
+
