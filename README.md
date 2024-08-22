@@ -17,10 +17,12 @@
     Note: This will extend your work on your previous assignment from day 1.
 
 ## Day 3
+### Pet Creator 
 
  In this assignment, you’ll split your JavaScript code into multiple files and create a simple pet management system. You will create a createPet factory function in one file and use it in another to manage pets through a form in an HTML page.
 
 ## Day 4
+### Pet render
 
  In this assignment, you'll extend your pet management system by creating a method that generates HTML for each pet and then rendering this HTML to the webpage. You'll also learn how to aggregate HTML from multiple objects into a single string and display it dynamically.
 
