@@ -12,15 +12,19 @@ function createPetOwner(name, email, phone, city, zipCode) {
         },
         render() {
             // console.log('Hey I Work!');
-            document.getElementById('ownerName').textContent = this.name;
-            document.getElementById('ownerEmail').textContent = this.email;
-            document.getElementById('ownerPhone').textContent = this.phone;
-            document.getElementById('ownerCity').textContent = this.city;
-            document.getElementById('ownerZip').textContent = this.zipCode;
+            document.getElementById('petOwnerHeader').textContent = `Pet Owner Info:`
+            document.getElementById('ownerName').textContent = `Owner Name: ${this.name}`;
+            document.getElementById('ownerEmail').textContent = `Email: ${this.email}`;
+            document.getElementById('ownerPhone').textContent = `Phone: ${this.phone}`;
+            document.getElementById('ownerCity').textContent = `City: ${this.city}`;
+            document.getElementById('ownerZip').textContent = `Zip Code: ${this.zipCode}`;
+            document.getElementById('ownerObject').style.visibility = "visible"
         }   
     }
     //BONUS: Hide form after pet owner is created
     document.getElementById('petForm').style.display = "none";
+    
     return petOwner;
 };
+
 

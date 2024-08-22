@@ -55,6 +55,7 @@ function saveForm() {
     console.table(petCreator(pName, petType));
     let pet = petCreator(pName, petType);
     pet.status();
+    pet.render();
     
 
     console.table(state);
@@ -68,13 +69,23 @@ signUpBtn.addEventListener('click', saveForm);
 //(You may make one for the pet, too!)
 
 function petCreator(name, species) {
-    return {
+    let pet =  {
        name,
        species,
        status() {
         console.log(`Pet Name: ${this.name} Species: ${this.species}`);
+       },
+       render() {
+        // console.log("It's Alive!!!");
+        document.getElementById('petHeader').textContent = "Pet Info:"
+        document.getElementById('petName').textContent = `Pet Name: ${this.name}`;
+        document.getElementById('petSpecies').textContent = `Species: ${this.species}`;
+        //Had to set the card to be hidden in css because the header and border was showing up
+        //This makes the Pet Owner Info card visible
+        document.getElementById('petObject').style.visibility = "visible"
        } 
     }
+    return pet;
 };
-petCreator('Fifi', 'Dog').status();
+// petCreator('Fifi', 'Dog').status();
 
