@@ -1,19 +1,6 @@
-/* form {
-    width: 560px;
-    height: auto;
-    padding: 20px;
-    margin: auto;
-} */
-/* fieldset {
-    margin-bottom: 20px;
+#ownerObject {
+    visibility: hidden;
 }
-fieldset input{
-    float: none;
+#petObject {
+    visibility: hidden;
 }
-.petType {
-    font-size: 18px;
-} */
-/* select {
-    margin-bottom: 20px;
-    height: 28px;
-} */
