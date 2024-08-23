@@ -29,17 +29,32 @@ function petCreator(name, age, species) {
      //        //This makes the Pet Owner Info card visible
      //        document.getElementById('petObject').style.visibility = "visible"
      //   },
+       getImage: function() {
+          let speciesImages = {
+               dog: 'dogPet.jpeg',
+               cat: 'catPet2.jpeg',
+               fish: 'petFish.jpeg'
+          }
+          return speciesImages[this.species]
+       },
        html: function () {
           return `
-               <div class="card border border-4 m-auto" id="petObject" style="width: 18rem;">
-                    <h3 class="card-header bg-info" id="petHeader">Pet Info</h3>
-                    <div class="card-body">
-                         <div class="card-text" id="petName"><strong>Pet Name:</strong> ${this.name}</div>
-                         <div class="card-text" id="petSpecies"><strong>Species:</strong> ${this.species}</div>
-                         <div class="card-text" id="petAge"><strong>Age:</strong> ${this.age}</div>
-                    </div>
-               </div>
-          `;
+               
+                    <div class="col-sm-6">
+                         <div class="card border border-4" id="petObject" style="width: 18rem;">
+                            <h3 class="card-header bg-info" id="petHeader">Pet Info</h3>
+                            <div>
+                              <img src="${pet.getImage()}" alt="${this.name} the ${this.species}" width="100"> 
+                            </div
+                            <div class="card-body">
+                              <div class="card-text" id="petName"><strong>Pet Name:</strong> ${this.name}</div>
+                              <div class="card-text" id="petSpecies"><strong>Species:</strong> ${this.species}</div>
+                              <div class="card-text" id="petAge"><strong>Age:</strong> ${this.age}</div>
+                            </div>
+                         </div>
+                     </div>
+          
+             `;
        }
     }
     return pet;
