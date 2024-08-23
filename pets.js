@@ -19,7 +19,6 @@ function savePet() {
     // console.log(speciesInput);
     let ageInput = document.getElementById('age').value;
     // console.log(ageInput);
-
     //Use petCreator function to make a pet using input data
     let pet = petCreator(nameInput, ageInput, speciesInput);
     pet.status();
@@ -27,11 +26,11 @@ function savePet() {
     //that is a property(inside) of the state object
     //Each time you click save button to create a new pet
     state.pets.push(pet);
-
-    console.table("Pets: ", state.pets);
     //Use render function from below to display pet cards
     render();
-
+    //BONUS: Filter pets into cats, dogs, fish
+    filterPets();
+    console.table("Pets: ", state.pets);
 }
 //This is where I want to render pet info cards
 //In a div in pets.html w/an id of 'petObject'
@@ -43,7 +42,9 @@ function render() {
     for(let i = 0; i<state.pets.length; i++) {
         //Use the html() method that is from the petCreator 
         //factory function on each pet in pets
-        let petHtml = state.pets[i].html();
+        // debugger
+        let petHtml = state.pets[i].html(); 
+        // console.log(petCreator('Dolly', 2, 'cat').html());
         // console.log(petHtml);
         //Sending the result from each pet that html() method was called on
         //To the html = "" one at a time w/+= operator
@@ -56,3 +57,22 @@ function render() {
 let petBtn = document.getElementById('petBtn');
 petBtn.addEventListener('click', savePet);
 
+//The filter method iterates over each element in the pets array, 
+//applies the provided function, and includes only those elements 
+//for which the function returns true.
+function filterPets() {
+    let dogs = state.pets.filter(pet => pet.species === 'dog');
+    // state.pets.push(dogs);
+    console.log('dogs: ', dogs);
+
+    let cats = state.pets.filter(pet => pet.species === 'cat');
+    // state.pets.push(cats);
+    console.log('cats: ', cats);
+
+    let fish = state.pets.filter(pet => pet.species === 'fish');
+    // state.pets.push(fish);
+    console.log('fish: ', fish);
+    // console.log(state.pets)
+}
+
+    
