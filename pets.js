@@ -21,14 +21,19 @@ function savePet() {
     //Use petCreator function to make a pet using input data
     let pet = petCreator(nameInput, ageInput, speciesInput);
     pet.status();
+    //
+   
     //Push each new pet to pets array 
     //that is a property(inside) of the state object
     //Each time you click save button to create a new pet
     state.pets.push(pet);
+    savePets();
     //Use render function from below to display pet cards
     render();
     //BONUS: Filter pets into cats, dogs, fish
     filterPets();
+    
+    
     console.table("Pets: ", state.pets);
 }
 //This is where I want to render pet info cards
