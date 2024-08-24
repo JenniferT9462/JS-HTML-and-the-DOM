@@ -34,7 +34,7 @@ function serializePet(pet) {
 function savePets() {
     const serializePets = state.pets.map(serializePet);
     localStorage.setItem("pets", JSON.stringify(serializePets));
-    // console.log(serializePets);
+    console.log(serializePets);
 };
 function loadPets() {
     let petString = localStorage.getItem("pets");
@@ -42,7 +42,7 @@ function loadPets() {
      state.pets = [];
      for(let i=0; i<savedPets.length; i++) {
         state.pets.push(petCreator(savedPets[i].name, savedPets[i].age, savedPets[i].species, savedPets[i].energy, savedPets[i].happiness));
-        console.log(state.pets);
+        console.table(state.pets);
      }
 }
 loadPets();
