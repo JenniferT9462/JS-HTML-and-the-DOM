@@ -1,6 +1,8 @@
 console.log("It's Alive!");
 //Define a global object called state
-const state = {};
+
+
+
 //Proof of life 1
 console.log(state);
 //Proof of life 2 breakpoint at the state object
@@ -59,6 +61,14 @@ function saveForm() {
     
 
     console.table(state);
+    //Saving form data to localStorage
+    localStorage.setItem("name", state.name);
+    localStorage.setItem("email", state.email);
+    localStorage.setItem("phone", state.phone);
+    localStorage.setItem("city", state.city);
+    localStorage.setItem("zipCode", state.zipCode);
+    localStorage.setItem("petName", state.petName);
+    localStorage.setItem("petType", state.petType);
     
 };
 let signUpBtn = document.getElementById('signUpBtn');

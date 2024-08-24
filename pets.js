@@ -1,10 +1,9 @@
 console.log("pets.js is Alive!!!");
 //Proof of life and file links
 // petCreator('Fifi', 'Dog', 3).status();
-let state = {};
+// let state = {};
 //Starting an empty array that is inside state named pets
-//This is where we will store our new pets
-state.pets = [];
+
 
 //If script from pets.js was on top or first, 
 //an error for undefined function would occur

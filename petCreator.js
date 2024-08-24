@@ -50,6 +50,8 @@ function petCreator(name, age, species) {
                               <div class="card-text" id="petName"><strong>Pet Name:</strong> ${this.name}</div>
                               <div class="card-text" id="petSpecies"><strong>Species:</strong> ${this.species}</div>
                               <div class="card-text" id="petAge"><strong>Age:</strong> ${this.age}</div>
+                              <div class="card-text" id="petEnergy"><strong>Energy:</strong> ${this.energy}</div>
+                              <div class="card-text id="petHappiness"><strong>Happiness:</strong> ${this.happiness}</div>
                             </div>
                          </div>
                      </div>
