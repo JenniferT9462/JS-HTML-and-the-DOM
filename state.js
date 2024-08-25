@@ -41,7 +41,7 @@ function loadPets() {
      const savedPets = JSON.parse(petString) || [];
      state.pets = [];
      for(let i=0; i<savedPets.length; i++) {
-        state.pets.push(petCreator(savedPets[i].name, savedPets[i].age, savedPets[i].species,));
+        state.pets.push(petCreator(savedPets[i].name, savedPets[i].age, savedPets[i].species));
         console.table(state.pets);
      }
 }
