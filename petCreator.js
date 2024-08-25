@@ -5,8 +5,9 @@ function petCreator(name, age, species) {
        name,
        age,
        species,
-       energy: Math.floor(Math.random() * 61) + 5,//Random number from 5 to 60
-       happiness: Math.floor(Math.random() * 101) + 20,//Random number from 20 to 100
+       energy: Math.floor(Math.random() * (60 - 5 + 1)) + 5,//Random number from 5 to 60
+       happiness: Math.floor(Math.random() * (100 - 20 + 1)) + 20,//Random number from 20 to 100
+      //Random number from 20 to 100
        status: function () {
             console.log(`Pet Name: ${this.name} Species: ${this.species} Age: ${this.age} Energy: ${this.energy} Happiness: ${this.happiness}`);
        },
