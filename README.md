@@ -26,3 +26,8 @@
 
  In this assignment, you'll extend your pet management system by creating a method that generates HTML for each pet and then rendering this HTML to the webpage. You'll also learn how to aggregate HTML from multiple objects into a single string and display it dynamically.
 
+ ## Day 5
+ ## Local Storage
+
+ In this assignment, you'll continue building your pet management system, now incorporating localStorage to persist data across page reloads. You'll learn how to manage state in a separate file, handle serialization and deserialization of objects with methods, and structure your project to maintain clean code.
+
