@@ -34,7 +34,9 @@ function petCreator(name, age, species) {
           let speciesImages = {
                dog: 'dogPet.jpeg',
                cat: 'catPet2.jpeg',
-               fish: 'petFish.jpeg'
+               fish: 'petFish.jpeg',
+               bird: 'bird.jpeg',
+               guineaPig: 'guineaPig.jpeg'
           }
           return speciesImages[this.species]
        },
